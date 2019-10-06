@@ -8,7 +8,6 @@ function App() {
     <React.Fragment>
       <NavBar />
       <main className="container">
-        <div className="content"></div>
         <Scoreboard />
       </main>
     </React.Fragment>

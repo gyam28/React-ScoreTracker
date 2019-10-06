@@ -1,12 +1,12 @@
 const scores = [
   {
     _id: "5b21ca3eeb7f6fbccd471810",
-    name: "Terminator",
+    name: "Shakira",
     score: 6
   },
   {
     _id: "5b21ca3eeb7f6fbccd471811",
-    name: "Godzilla",
+    name: "Lizzie",
     score: 4
   },
   {
@@ -16,7 +16,7 @@ const scores = [
   },
   {
     _id: "5b21ca3eeb7f6fbccd471813",
-    name: "Kill Bill",
+    name: "Dexter",
     score: 5
   },
   {

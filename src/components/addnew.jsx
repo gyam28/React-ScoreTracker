@@ -102,20 +102,26 @@ class AddNewButton extends Component {
                   />
                 </div>
               </div>
-              <button
-                disabled={this.validate()}
-                className="btn btn-dark btn-lg"
-                type="submit"
-              >
-                Submit
-              </button>
-              <button
-                className="btn btn-dark pull-right"
-                type="reset"
-                onClick={this.toggle}
-              >
-                Cancel
-              </button>
+              <div className="row">
+                <div className="col">
+                  <button
+                    disabled={this.validate()}
+                    className="btn btn-dark btn-block"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    className="btn btn-dark btn-block"
+                    type="reset"
+                    onClick={this.toggle}
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
             </form>
           </div>
         </Collapse>
