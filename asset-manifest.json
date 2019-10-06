@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/React-ScoreTracker/static/css/main.23884b51.chunk.css",
-    "main.js": "/React-ScoreTracker/static/js/main.ea9e3563.chunk.js",
-    "main.js.map": "/React-ScoreTracker/static/js/main.ea9e3563.chunk.js.map",
+    "main.js": "/React-ScoreTracker/static/js/main.8e379611.chunk.js",
+    "main.js.map": "/React-ScoreTracker/static/js/main.8e379611.chunk.js.map",
     "runtime-main.js": "/React-ScoreTracker/static/js/runtime-main.17502129.js",
     "runtime-main.js.map": "/React-ScoreTracker/static/js/runtime-main.17502129.js.map",
     "static/css/2.5761d638.chunk.css": "/React-ScoreTracker/static/css/2.5761d638.chunk.css",
     "static/js/2.9db165b2.chunk.js": "/React-ScoreTracker/static/js/2.9db165b2.chunk.js",
     "static/js/2.9db165b2.chunk.js.map": "/React-ScoreTracker/static/js/2.9db165b2.chunk.js.map",
     "index.html": "/React-ScoreTracker/index.html",
-    "precache-manifest.b987489aa7be44977af4425eb5d3e231.js": "/React-ScoreTracker/precache-manifest.b987489aa7be44977af4425eb5d3e231.js",
+    "precache-manifest.2053db0969c861c0af7bfeddbc636cee.js": "/React-ScoreTracker/precache-manifest.2053db0969c861c0af7bfeddbc636cee.js",
     "service-worker.js": "/React-ScoreTracker/service-worker.js",
     "static/css/2.5761d638.chunk.css.map": "/React-ScoreTracker/static/css/2.5761d638.chunk.css.map",
     "static/css/main.23884b51.chunk.css.map": "/React-ScoreTracker/static/css/main.23884b51.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.5761d638.chunk.css",
     "static/js/2.9db165b2.chunk.js",
     "static/css/main.23884b51.chunk.css",
-    "static/js/main.ea9e3563.chunk.js"
+    "static/js/main.8e379611.chunk.js"
   ]
 }
