@@ -54,7 +54,6 @@ class AddNewButton extends Component {
     const { data } = this.state;
     const errors = this.validate();
     this.setState({ errors: errors || {} });
-    console.log(errors);
     if (errors) return;
     e.preventDefault();
     this.props.onSubmit(data.player, data.points);
@@ -69,7 +68,7 @@ class AddNewButton extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <p>
           <Button
             className="btn btn-dark btn-block"
@@ -125,7 +124,7 @@ class AddNewButton extends Component {
             </form>
           </div>
         </Collapse>
-      </div>
+      </React.Fragment>
     );
   }
 }

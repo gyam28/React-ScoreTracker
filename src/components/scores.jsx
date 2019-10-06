@@ -7,32 +7,23 @@ import AddNewButton from "./addnew";
 class Scoreboard extends Component {
   state = {
     scores: [],
-    columns: [
-      { label: "Position" },
-      { label: "Player", path: "name" },
-      { label: "Points", path: "score" }
-    ],
-    currentPage: 1,
-    pageSize: 4,
-    sortColumn: { path: "score", order: "desc" }
+    columns: [{ label: "Position" }, { label: "Player" }, { label: "Points" }],
+    sortOrder: "desc"
   };
 
   componentDidMount() {
     const unorganisedScores = getScores();
     this.setState({
-      scores: this.sortingByScore(
-        unorganisedScores,
-        this.state.sortColumn.order
-      )
+      scores: this.sortingByScore(unorganisedScores, this.state.sortOrder)
     });
   }
 
-  handleSort = sortColumn => {
+  handleSort = sortOrder => {
     this.setState({
-      sortColumn
+      sortOrder
     });
     this.setState({
-      scores: this.sortingByScore(this.state.scores, sortColumn.order)
+      scores: this.sortingByScore(this.state.scores, sortOrder)
     });
   };
 
@@ -52,18 +43,18 @@ class Scoreboard extends Component {
     return sortedList;
   }
   handleSubmit = (name, point) => {
-    const { scores, sortColumn } = this.state;
+    const { scores, sortOrder } = this.state;
     const newScore = createScore(name, point);
     const scoreList = scores;
     scoreList.push(newScore);
-    const updatedList = this.sortingByScore(scoreList, sortColumn.order);
+    const updatedList = this.sortingByScore(scoreList, sortOrder);
     this.setState({
       scores: updatedList
     });
   };
 
   render() {
-    const { columns, sortColumn, scores } = this.state;
+    const { columns, sortOrder, scores } = this.state;
     const totalCount = scores.length;
 
     return totalCount === 0 ? (
@@ -72,19 +63,19 @@ class Scoreboard extends Component {
         <AddNewButton onSubmit={this.handleSubmit} />
       </React.Fragment>
     ) : (
-      <div>
+      <React.Fragment>
         <h3>{"Showing " + totalCount + " ranking results in the list."}</h3>
 
         <table className="table table-hover">
           <TableHeader
             columns={columns}
             onSort={this.handleSort}
-            sortColumn={sortColumn}
+            sortOrder={sortOrder}
           />
-          <TableBody scores={scores} sortingOrder={sortColumn.order} />
+          <TableBody scores={scores} sortingOrder={sortOrder} />
         </table>
         <AddNewButton onSubmit={this.handleSubmit} />
-      </div>
+      </React.Fragment>
     );
   }
 }

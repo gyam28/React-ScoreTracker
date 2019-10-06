@@ -1,22 +1,15 @@
 import React, { Component } from "react";
 
 class TableHeader extends Component {
-  raiseSort = path => {
-    const sortColumn = { ...this.props.sortColumn };
-    if (sortColumn.path === path) {
-      sortColumn.order = sortColumn.order === "asc" ? "desc" : "asc";
-    } else {
-      sortColumn.path = path;
-      sortColumn.order = "asc";
-    }
-    console.log(sortColumn);
-    this.props.onSort(sortColumn);
+  raiseSort = () => {
+    const sortOrder = this.props.sortOrder;
+    const newOrder = sortOrder === "asc" ? "desc" : "asc";
+    this.props.onSort(newOrder);
   };
 
-  renderSortIcon = column => {
-    const { sortColumn } = this.props;
-    if (column.path !== sortColumn.path) return null;
-    if (sortColumn.order === "asc") return <i className="fa fa-sort-asc" />;
+  renderSortIcon = () => {
+    const { sortOrder } = this.props;
+    if (sortOrder === "asc") return <i className="fa fa-sort-asc" />;
     return <i className="fa fa-sort-desc" />;
   };
 
@@ -27,15 +20,13 @@ class TableHeader extends Component {
           {this.props.columns.map(column => (
             <th
               className="clickable"
-              key={column.path || column.label}
+              key={column.label}
               onClick={
-                column.label === "Points"
-                  ? () => this.raiseSort(column.path)
-                  : null
+                column.label === "Points" ? () => this.raiseSort() : null
               }
             >
               {column.label}{" "}
-              {column.label === "Points" ? this.renderSortIcon(column) : null}
+              {column.label === "Points" ? this.renderSortIcon() : null}
             </th>
           ))}
         </tr>
