@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-ScoreTracker/static/css/main.40160a3b.chunk.css",
+    "main.js": "/React-ScoreTracker/static/js/main.b74fa607.chunk.js",
+    "main.js.map": "/React-ScoreTracker/static/js/main.b74fa607.chunk.js.map",
+    "runtime-main.js": "/React-ScoreTracker/static/js/runtime-main.17502129.js",
+    "runtime-main.js.map": "/React-ScoreTracker/static/js/runtime-main.17502129.js.map",
+    "static/css/2.5761d638.chunk.css": "/React-ScoreTracker/static/css/2.5761d638.chunk.css",
+    "static/js/2.9db165b2.chunk.js": "/React-ScoreTracker/static/js/2.9db165b2.chunk.js",
+    "static/js/2.9db165b2.chunk.js.map": "/React-ScoreTracker/static/js/2.9db165b2.chunk.js.map",
+    "index.html": "/React-ScoreTracker/index.html",
+    "precache-manifest.40a6ab611d4a784e1eb79d7e1fa2a810.js": "/React-ScoreTracker/precache-manifest.40a6ab611d4a784e1eb79d7e1fa2a810.js",
+    "service-worker.js": "/React-ScoreTracker/service-worker.js",
+    "static/css/2.5761d638.chunk.css.map": "/React-ScoreTracker/static/css/2.5761d638.chunk.css.map",
+    "static/css/main.40160a3b.chunk.css.map": "/React-ScoreTracker/static/css/main.40160a3b.chunk.css.map",
+    "static/media/font-awesome.css": "/React-ScoreTracker/static/media/fontawesome-webfont.fee66e71.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17502129.js",
+    "static/css/2.5761d638.chunk.css",
+    "static/js/2.9db165b2.chunk.js",
+    "static/css/main.40160a3b.chunk.css",
+    "static/js/main.b74fa607.chunk.js"
+  ]
+}
