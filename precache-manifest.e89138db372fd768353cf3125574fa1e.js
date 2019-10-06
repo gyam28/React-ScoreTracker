@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03fb8944de4797ace71a7c646ba61202",
+    "revision": "2bd637d71c9293cc8841272937870f45",
     "url": "/React-ScoreTracker/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-ScoreTracker/static/css/2.5761d638.chunk.css"
   },
   {
-    "revision": "06745d6ddd08eabe0390",
-    "url": "/React-ScoreTracker/static/css/main.40160a3b.chunk.css"
+    "revision": "54754a18a2786594cf06",
+    "url": "/React-ScoreTracker/static/css/main.23884b51.chunk.css"
   },
   {
     "revision": "eee5a4d7e3b366309d4f",
     "url": "/React-ScoreTracker/static/js/2.9db165b2.chunk.js"
   },
   {
-    "revision": "06745d6ddd08eabe0390",
+    "revision": "54754a18a2786594cf06",
     "url": "/React-ScoreTracker/static/js/main.b74fa607.chunk.js"
   },
   {
