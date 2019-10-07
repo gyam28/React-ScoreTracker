@@ -58,12 +58,19 @@ class Scoreboard extends Component {
     const totalCount = scores.length;
 
     return totalCount === 0 ? (
-      <React.Fragment>
+      <div>
         <h3>There are no scores to show.</h3>
         <AddNewButton onSubmit={this.handleSubmit} />
-      </React.Fragment>
+      </div>
     ) : (
-      <React.Fragment>
+      <div
+        style={{
+          flex: 1,
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "stretch"
+        }}
+      >
         <h3>{"Showing " + totalCount + " ranking results in the list."}</h3>
 
         <table className="table table-hover">
@@ -75,7 +82,7 @@ class Scoreboard extends Component {
           <TableBody scores={scores} sortingOrder={sortOrder} />
         </table>
         <AddNewButton onSubmit={this.handleSubmit} />
-      </React.Fragment>
+      </div>
     );
   }
 }

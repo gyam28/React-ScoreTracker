@@ -5,7 +5,14 @@ import "./App.css";
 
 function App() {
   return (
-    <React.Fragment>
+    <React.Fragment
+      style={{
+        flex: 1,
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "stretch"
+      }}
+    >
       <NavBar />
       <main className="container">
         <Scoreboard />
